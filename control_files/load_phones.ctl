@@ -1,0 +1,12 @@
+LOAD	DATA
+INTO	TABLE hlr_customers
+TRUNCATE
+FIELDS	TERMINATED BY ';'
+TRAILING NULLCOLS
+	(
+	msin POSITION(01:10),
+	phone_num POSITION(12:18),
+	ndc POSITION(20:21),
+	pop_customer POSITION(23:23)
+	)
+
